@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Varshini Shekar — Full Stack Developer & AI Builder</title>
+  <meta name="description" content="Varshini Shekar — Full Stack Developer, AI Builder & UI/UX Designer. B.E. CSE @ DSCE Bengaluru." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── CURSOR ── -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <div class="nav-logo">VS<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me</button>
+    <button class="hamburger" id="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#research" class="mob-link">Research</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="home">
+    <canvas id="bgCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        Open to Internships — 2025
+      </div>
+      <h1 class="hero-name">
+        <span class="line1">Varshini</span>
+        <span class="line2">Shekar<span class="cursor-blink">_</span></span>
+      </h1>
+      <p class="hero-role">
+        <span class="typed-text" id="typedText"></span>
+      </p>
+      <p class="hero-sub">
+        Building at the intersection of <em>AI, full-stack dev</em> &amp; <em>design</em>.<br/>
+        B.E. CSE @ Dayananda Sagar College of Engineering, Bengaluru.
+      </p>
+      <div class="hero-cta-row">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="Varshini_Shekar_Resume.pdf" class="btn-ghost" download>Download CV</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Projects</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">2</span><span class="stat-label">Publications</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">98.5%</span><span class="stat-label">State Rank XII</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+      <div class="code-card">
+        <div class="cc-header">
+          <span class="cc-dot red"></span>
+          <span class="cc-dot yellow"></span>
+          <span class="cc-dot green"></span>
+          <span class="cc-fname">varshini.py</span>
+        </div>
+        <pre class="cc-body"><span class="kw">class</span> <span class="cls">Varshini</span>:
+  name   = <span class="str">"Varshini Shekar"</span>
+  role   = <span class="str">"Full Stack + AI Dev"</span>
+  stack  = [<span class="str">"React"</span>, <span class="str">"Python"</span>,
+            <span class="str">"Node"</span>, <span class="str">"YOLOv8"</span>]
+  status = <span class="str">"open_to_intern() ✓"</span>
+
+  <span class="kw">def</span> <span class="fn">build</span>(self):
+    <span class="kw">return</span> <span class="str">"something cool 🚀"</span></pre>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">01 / About</div>
+      <h2 class="section-title">Who I am</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a 3rd-year Computer Science student at DSCE Bengaluru with a deep curiosity for building things that blend <strong>artificial intelligence</strong> with clean, thoughtful engineering.</p>
+          <p>From training YOLOv8 models for industrial crack detection to building stress-adaptive games powered by facial expression recognition — I love projects that feel like science fiction but run on a laptop.</p>
+          <p>Outside of code, I research the effects of music on the human mind, design interfaces in Figma, and chase that elusive 100% score on everything I do (Karnataka State 12th Rank is one proof of that).</p>
+          <div class="about-chips">
+            <span class="chip">🔭 AI & Computer Vision</span>
+            <span class="chip">⚡ Full Stack Dev</span>
+            <span class="chip">🎨 UI/UX Design</span>
+            <span class="chip">📡 IoT Systems</span>
+            <span class="chip">📝 Research Author</span>
+          </div>
+        </div>
+        <div class="about-aside">
+          <div class="edu-card">
+            <div class="edu-icon">🎓</div>
+            <div>
+              <div class="edu-school">DSCE, Bengaluru</div>
+              <div class="edu-deg">B.E. Computer Science & Engineering</div>
+              <div class="edu-yr">2023 – 2027 · 6th Semester</div>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon">🏆</div>
+            <div>
+              <div class="edu-school">New Horizon PU College</div>
+              <div class="edu-deg">Karnataka State 12th Rank · 98.5%</div>
+              <div class="edu-yr">College Science Topper · 2023</div>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon">📜</div>
+            <div>
+              <div class="edu-school">Air Force School</div>
+              <div class="edu-deg">CBSE Class X · 90%</div>
+              <div class="edu-yr">Graduated 2020</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label">02 / Skills</div>
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <div class="sg-header">
+            <span class="sg-icon">⌨️</span>
+            <span>Languages</span>
+          </div>
+          <div class="skill-tags">
+            <span class="stag">Python</span>
+            <span class="stag">JavaScript</span>
+            <span class="stag">Java</span>
+            <span class="stag">C++</span>
+            <span class="stag">C</span>
+            <span class="stag">HTML</span>
+            <span class="stag">CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="sg-header">
+            <span class="sg-icon">⚛️</span>
+            <span>Frameworks</span>
+          </div>
+          <div class="skill-tags">
+            <span class="stag accent">React.js</span>
+            <span class="stag accent">Next.js</span>
+            <span class="stag accent">Node.js</span>
+            <span class="stag accent">Express.js</span>
+            <span class="stag">jQuery</span>
+            <span class="stag">Material-UI</span>
+            <span class="stag accent">FastAPI</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="sg-header">
+            <span class="sg-icon">🧠</span>
+            <span>AI / ML</span>
+          </div>
+          <div class="skill-tags">
+            <span class="stag highlight">YOLOv8</span>
+            <span class="stag highlight">MediaPipe</span>
+            <span class="stag highlight">OpenCV</span>
+            <span class="stag highlight">Pygame</span>
+            <span class="stag">Computer Vision</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="sg-header">
+            <span class="sg-icon">🗄️</span>
+            <span>Databases</span>
+          </div>
+          <div class="skill-tags">
+            <span class="stag">MongoDB</span>
+            <span class="stag">MySQL</span>
+            <span class="stag">PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="sg-header">
+            <span class="sg-icon">🛠️</span>
+            <span>Tools & Cloud</span>
+          </div>
+          <div class="skill-tags">
+            <span class="stag">Git</span>
+            <span class="stag">GitHub</span>
+            <span class="stag">AWS</span>
+            <span class="stag">Firebase</span>
+            <span class="stag">Linux</span>
+            <span class="stag">VS Code</span>
+            <span class="stag">Arduino</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="sg-header">
+            <span class="sg-icon">🎨</span>
+            <span>Design</span>
+          </div>
+          <div class="skill-tags">
+            <span class="stag">Figma</span>
+            <span class="stag">Canva</span>
+            <span class="stag">Photoshop</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label">03 / Projects</div>
+      <h2 class="section-title">What I've built</h2>
+      <div class="projects-grid">
+
+        <div class="proj-card featured">
+          <div class="proj-year">2025</div>
+          <div class="proj-icon-wrap"><span class="proj-icon">🔮</span></div>
+          <h3 class="proj-title">AfterLife Protocol — AI & Blockchain Digital Legacy</h3>
+          <p class="proj-desc">AI-powered platform that securely executes posthumous digital wishes after multi-step verification. Converts natural-language wishes into structured plans via LLMs, uses Stellar blockchain for tamper-proof execution records, and IPFS for decentralized document storage.</p>
+          <div class="proj-stack">
+            <span>Python</span><span>FastAPI</span><span>React.js</span><span>Supabase</span><span>Stellar</span><span>OpenAI API</span><span>IPFS</span>
+          </div>
+          <div class="proj-badge featured-badge">⭐ Featured</div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-year">2026</div>
+          <div class="proj-icon-wrap"><span class="proj-icon">🔬</span></div>
+          <h3 class="proj-title">Dual-Mode Crack & Surface Anomaly Detection</h3>
+          <p class="proj-desc">Hybrid industrial inspection system combining YOLOv8 segmentation and OpenCV for real-time crack detection, served via FastAPI with Arduino ultrasonic sensing as fallback.</p>
+          <div class="proj-stack">
+            <span>YOLOv8</span><span>OpenCV</span><span>FastAPI</span><span>Python</span><span>Arduino</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-year">2025</div>
+          <div class="proj-icon-wrap"><span class="proj-icon">🎮</span></div>
+          <h3 class="proj-title">Stress-Adaptive Space Invaders</h3>
+          <p class="proj-desc">A game that reads your face. MediaPipe emotion detection feeds live into the Pygame engine, adjusting difficulty dynamically based on detected stress levels — biofeedback gaming in Python.</p>
+          <div class="proj-stack">
+            <span>Python</span><span>Pygame</span><span>MediaPipe</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-year">2024</div>
+          <div class="proj-icon-wrap"><span class="proj-icon">🌦️</span></div>
+          <h3 class="proj-title">Smart Clothesline System</h3>
+          <p class="proj-desc">IoT-enabled automated clothesline that shields clothes from rain autonomously. Arduino microcontroller + rain/humidity sensors drive the control logic with zero human input.</p>
+          <div class="proj-stack">
+            <span>Arduino</span><span>IoT</span><span>C++</span><span>Sensors</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-year">2024</div>
+          <div class="proj-icon-wrap"><span class="proj-icon">🌐</span></div>
+          <h3 class="proj-title">Personal Portfolio Website</h3>
+          <p class="proj-desc">Responsive portfolio applying modern UI/UX principles — smooth navigation, clean component design, and cloud-deployed for the world to see.</p>
+          <div class="proj-stack">
+            <span>React.js</span><span>CSS</span><span>Cloud Hosting</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RESEARCH & EXPERIENCE ── -->
+  <section class="research section" id="research">
+    <div class="container">
+      <div class="section-label">04 / Research & Experience</div>
+      <h2 class="section-title">Beyond Code</h2>
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-marker"></div>
+          <div class="tl-body">
+            <div class="tl-date">2024</div>
+            <div class="tl-role">Research Author</div>
+            <div class="tl-org">Published on Zenodo</div>
+            <p class="tl-desc">Authored and published <em>"Effects of Music Therapy on Anxiety and Stress Reduction"</em> — conducting a full literature review, experimental design, and statistical analysis of music's measurable impact on psychological wellbeing.</p>
+            <a href="https://zenodo.org" target="_blank" class="tl-link">Read Paper ↗</a>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-marker"></div>
+          <div class="tl-body">
+            <div class="tl-date">2023 – Present</div>
+            <div class="tl-role">UI/UX Designer</div>
+            <div class="tl-org">Figma Projects</div>
+            <p class="tl-desc">Designed multiple interactive prototypes and wireframes for web and mobile applications. Focused on user flows, accessibility, and design consistency across platforms.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-marker"></div>
+          <div class="tl-body">
+            <div class="tl-date">2023</div>
+            <div class="tl-role">Student Club Volunteer</div>
+            <div class="tl-org">New Horizon PU College</div>
+            <p class="tl-desc">Coordinated events and led student engagement initiatives within student-led clubs. Built teamwork and organizational skills that carry forward into every project.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Certifications -->
+      <div class="cert-section">
+        <h3 class="cert-title">Certifications & Achievements</h3>
+        <div class="cert-grid">
+          <div class="cert-card">
+            <span class="cert-icon">☁️</span>
+            <div class="cert-name">AWS Solutions Architecture</div>
+            <div class="cert-org">Forage Virtual Internship</div>
+          </div>
+          <div class="cert-card">
+            <span class="cert-icon">🔐</span>
+            <div class="cert-name">Cyber Job Simulation</div>
+            <div class="cert-org">Deloitte · Forage</div>
+          </div>
+          <div class="cert-card">
+            <span class="cert-icon">💻</span>
+            <div class="cert-name">Full Stack Development</div>
+            <div class="cert-org">Certified</div>
+          </div>
+          <div class="cert-card">
+            <span class="cert-icon">🏆</span>
+            <div class="cert-name">Karnataka State 12th Rank</div>
+            <div class="cert-org">2023 · College Science Topper</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label">05 / Contact</div>
+      <h2 class="section-title">Let's build something</h2>
+      <p class="contact-sub">I'm actively looking for internship opportunities in 2025. Whether you have a project, a role, or just want to connect — my inbox is open.</p>
+      <div class="contact-grid">
+        <div class="contact-links">
+          <a href="mailto:varshinishekar15@gmail.com" class="contact-item">
+            <span class="ci-icon">✉️</span>
+            <div>
+              <div class="ci-label">Email</div>
+              <div class="ci-val">varshinishekar15@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/varshinishekar" target="_blank" class="contact-item">
+            <span class="ci-icon">💼</span>
+            <div>
+              <div class="ci-label">LinkedIn</div>
+              <div class="ci-val">linkedin.com/in/varshinishekar</div>
+            </div>
+          </a>
+          <a href="https://github.com/varshinishekar15" target="_blank" class="contact-item">
+            <span class="ci-icon">🐙</span>
+            <div>
+              <div class="ci-label">GitHub</div>
+              <div class="ci-val">github.com/varshinishekar15</div>
+            </div>
+          </a>
+          <a href="https://mysite.com" target="_blank" class="contact-item">
+            <span class="ci-icon">🌐</span>
+            <div>
+              <div class="ci-label">Website</div>
+              <div class="ci-val">mysite.com</div>
+            </div>
+          </a>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="4" placeholder="Tell me about the opportunity or project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">Send Message ↗</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">VS<span class="dot">.</span></div>
+      <p class="footer-copy">Designed & built by Varshini Shekar · 2025</p>
+      <div class="footer-links">
+        <a href="https://github.com/varshinishekar15" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/varshinishekar" target="_blank">LinkedIn</a>
+        <a href="mailto:varshinishekar15@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
